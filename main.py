@@ -8,6 +8,7 @@
 # If they run out of turns, provide feedback to the player. 
 # Include two different difficulty levels (e.g., 10 guesses in easy mode, only 5 guesses in hard mode).
 from random import randint
+from art import logo
 
 EASY_LEVEL_TURNS = 10
 HARD_LEVEL_TURNS = 5
@@ -35,6 +36,7 @@ def set_difficulty():
         return HARD_LEVEL_TURNS
     
 def game():
+  print(logo)
   # Choosing a random number between 1 & 100
   print("Welcome to the Number Guessing Game!")
   print("I'm thinking of a number between 1 and 100.")
